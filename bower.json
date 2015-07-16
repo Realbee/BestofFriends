@@ -1,0 +1,20 @@
+{
+  "name": "y",
+  "version": "y",
+  "authors": [
+    "Bisoye Atolagbe"
+  ],
+  "description": "Best of friends app to record our life biography",
+  "moduleType": [
+    "node"
+  ],
+  "license": "y",
+  "homepage": "https://github.com/realbee/BestofFriends",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
