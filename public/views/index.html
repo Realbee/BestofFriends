@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" ng-app ="mainManager">
+<html lang="en" ng-app="mainManager">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Best of Friends</title>
-
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="../../bower_components/bootstrap//dist/css/bootstrap.css" type="text/css">
-
+    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css" type="text/css">
     <!-- Custom Fonts -->
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="../stylesheets/style.css" type="text/css">
@@ -23,11 +19,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body id="page-top" ng-controller="mainController">
-
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -40,7 +34,6 @@
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">Best of Friends</a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -62,290 +55,141 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
-        <div id = "carousel-current" class="carousel slide" data-ride ="carousel" data-interval="3000">
+    <div id="carousel-current" class="carousel slide" data-ride="carousel" data-interval="3000">
         <ol class="carousel-indicators">
-            <li data-target="carousel-current" data-slide-to ="0" class="active"></li>
-            <li data-target="carousel-current" data-slide-to ="1"></li>
-            <li data-target="carousel-current" data-slide-to ="2"></li>
-            <li data-target="carousel-current" data-slide-to ="3"></li>
-            <li data-target="carousel-current" data-slide-to ="4"></li>
+            <li data-target="carousel-current" data-slide-to="0" class="active"></li>
+            <li data-target="carousel-current" data-slide-to="1"></li>
+            <li data-target="carousel-current" data-slide-to="2"></li>
+            <li data-target="carousel-current" data-slide-to="3"></li>
+            <li data-target="carousel-current" data-slide-to="4"></li>
         </ol>
         <div class="carousel-inner">
-        <div class="item active"><img src = "../images/photo1.jpg" alt=" "></div>
-        <div class="item"><img src = "../images/photo2.jpg" alt=" "></div>
-        <div class="item" ><img src = "../images/photo3.jpg" alt=" "></div>
-        <div class="item"><img src = "../images/photo4.jpg" alt=" "></div>
-        <div class="item"><img src = "../images/photo5.jpg" alt=" "></div>
+            <div class="item active"><img src="../images/photo1.jpg" alt=" "></div>
+            <div class="item"><img src="../images/photo2.jpg" alt=" "></div>
+            <div class="item"><img src="../images/photo3.jpg" alt=" "></div>
+            <div class="item"><img src="../images/photo4.jpg" alt=" "></div>
+            <div class="item"><img src="../images/photo5.jpg" alt=" "></div>
         </div>
-        <a class ="left carousel-control" href="#carousel-current" role= "button" data-slide ="prev"><span class="glyphicon glyphicom-chevron-left"></span></a>
-    <a class ="right carousel-control" href="#carousel-current" role= "button" data-slide ="next"><span class="glyphicon glyphicom-chevron-right"></span></a>
+        <a class="left carousel-control" href="#carousel-current" role="button" data-slide="prev"><span class="glyphicon glyphicom-chevron-left"></span></a>
+        <a class="right carousel-control" href="#carousel-current" role="button" data-slide="next"><span class="glyphicon glyphicom-chevron-right"></span></a>
         <div class="pageheader">
-                            <h1 class= "lead" >Welcome To The World of These Crazy and Inspiring Pals</h1>
-                <p class="text-intro">We are a set of smart, intelligent and weird set of guys with common dreams to change the world,
-                 break new grounds, and touch lives positively</p>
-                <a href="#our-story" class="btn btn-primary btn-xl page-scroll">Find Out More About Us</a>
-    </div>
-
-    <section class="bg-primary" id="our-story">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Faith Sometimes, Brings Great Minds Together!</h2>
-                    <hr class="light">
-                    <p class="text-faded">It all started in University of Ilorin, in 2009 when we all gain admission to 
-                    to study different courses,. We all met at different stages during our early days and by the end of the first year, we have all become familiar with each other, the friendship became stronger, we 
-                    moved from casual friendship to sharing ideas, offering support, failing and suceeding together, we found a bond stronger than friendship and together we began aspiring for greatness.</p>
-                    <a href="#" class="btn btn-default btn-xl">Read More</a>
-                </div>
-            </div>
+            <h1 class="lead">Welcome To The World of These Crazy and Inspiring Pals</h1>
+            <p class="text-intro">We are a set of smart, intelligent and weird set of guys with common dreams to change the world, break new grounds, and touch lives positively</p>
+            <a href="#our-story" class="btn btn-primary btn-xl page-scroll">Find Out More About Us</a>
         </div>
-    </section>
-
-    <section class="bg-success" id="our-photos">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Gallery</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                        <h3>All Photos</h3>
-                        <p class="text-muted">View every picture in our regularly updated gallery.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Historical/Cronological</h3>
-                        <p class="text-muted">Photos of our we started, how our friendship grew and some current photos</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Important Events</h3>
-                        <p class="text-muted">Photos of important achievements and milestones of some of us</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Our favourites</h3>
-                        <p class="text-muted">Some photos on crazy stuffs we have done and other special favourites</p>
+        <section class="bg-primary" id="our-story">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2 class="section-heading">Faith Sometimes, Brings Great Minds Together!</h2>
+                        <hr class="light">
+                        <p class="text-faded">It all started in University of Ilorin, in 2009 when we all gain admission to to study different courses,. We all met at different stages during our early days and by the end of the first year, we have all become familiar with each other, the friendship became stronger, we moved from casual friendship to sharing ideas, offering support, failing and suceeding together, we found a bond stronger than friendship and together we began aspiring for greatness.</p>
+                        <a href="#" class="btn btn-default btn-xl">Read More</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <ng-view></ng-view>
-    <section class="no-padding" id="our-profiles">
-
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="image-circle col-lg-4 col-sm-6">
-                    <a href="#bisoye" class="portfolio-box">
-                        <img src="../images/imageWood.jpg" class="image-circle img-responsive" alt="">
-                        <div class="image-circle portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Atolagbe Bisoye Lateef
-                                </div>
-                                <div class="project-name">
-                                    view profile
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="image-circle col-lg-4 col-sm-6">
-                    <a href="#semiu" class="portfolio-box">
-                        <img src="../images/imageWood.jpg" class="image-circle img-responsive" alt="">
-                        <div class="image-circle portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Hassan Semiu Ayomon
-                                </div>
-                                <div class="project-name">
-                                    view profile
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="image-circle col-lg-4 col-sm-6">
-                    <a href="#saheed" class="portfolio-box">
-                        <img src="../images/imageWood.jpg" class=" image-circle img-responsive" alt="">
-                        <div class="image-circle portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Giwa Omotolani Saheed
-                                </div>
-                                <div class="project-name">
-                                    view profile
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="image-circle col-lg-4 col-sm-6">
-                    <a href="#lateef" class="portfolio-box">
-                        <img src="../images/imageWood.jpg" class=" image-circle img-responsive" alt="">
-                        <div class=" image-circle portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Oyebanji Lateef Abolarinwa
-                                </div>
-                                <div class="project-name">
-                                    view profile
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="image-circle col-lg-4 col-sm-6">
-                    <a href="#francis" class="portfolio-box">
-                        <img src="../images/imageWood.jpg" class=" image-circle img-responsive" alt="">
-                        <div class="image-circle portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Falaju Idowu Francis
-                                </div>
-                                <div class="project-name">
-                                    view profile
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="image-circle col-lg-4 col-sm-6">
-                    <a href="#eedris" class="portfolio-box">
-                        <img src="../images/imageWood.jpg" class=" image-circle img-responsive" alt="">
-                        <div class="image-circle portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Awotedu Opeyemi Eedris
-                                </div>
-                                <div class="project-name">
-                                    view profile
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="image-circle col-lg-4 col-sm-6">
-                    <a href="#wale" class="portfolio-box">
-                        <img src="../images/imageWood.jpg" class="image-circle img-responsive" alt="">
-                        <div class="image-circle portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Rahman Saheed Adewale
-                                </div>
-                                <div class="project-name">
-                                    view profile
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="image-circle col-lg-4 col-sm-6">
-                    <a href="#kola" class="portfolio-box">
-                        <img src="../images/imageWood.jpg" class="image-circle img-responsive" alt="">
-                        <div class="image-circle portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Orowole Kolawole Inumidun
-                                </div>
-                                <div class="project-name">
-                                    view profile
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="image-circle col-lg-4 col-sm-6">
-                    <a href="#ola" class="portfolio-box">
-                        <img src="../images/imageWood.jpg" class="image-circle img-responsive" alt="">
-                        <div class="image-circle portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Tijani Olayiwola
-                                </div>
-                                <div class="project-name">
-                                    view profile
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            
-            <div class="image-circle col-lg-4 col-sm-6">
-                    <a href="#simon" class="portfolio-box">
-                        <img src="../images/imageWood.jpg" class="image-circle img-responsive" alt="">
-                        <div class="image-circle portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Lawal Sunday Simon
-                                </div>
-                                <div class="project-name">
-                                    view profile
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+        </section>
+        <section class="bg-success" id="our-photos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Gallery</h2>
+                        <hr class="primary">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Personal Diary Page</h2>
-                <a href="#" class="btn btn-default btn-xl wow tada">Guys Login</a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box">
+                            <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
+                            <h3>All Photos</h3>
+                            <p class="text-muted">View every picture in our regularly updated gallery.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box">
+                            <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                            <h3>Historical/Cronological</h3>
+                            <p class="text-muted">Photos of our we started, how our friendship grew and some current photos</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box">
+                            <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                            <h3>Important Events</h3>
+                            <p class="text-muted">Photos of important achievements and milestones of some of us</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box">
+                            <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                            <h3>Our favourites</h3>
+                            <p class="text-muted">Some photos on crazy stuffs we have done and other special favourites</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </aside>
-    <section id="personal-diaries">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Contact Our Group</h2>
-                    <hr class="primary">
-                    <p>Will you like to talk to all of us, invite us to an event, yarb us or just want to 
-                    know more, you can reach the group through any of the contacts below</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>123-456-6789</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">reachout@bestoffriends.com</a></p>
+        </section>
+        <ng-view></ng-view>
+        <section class="no-padding" id="our-profiles">
+            <div class="container-fluid">
+                <div class="row no-gutter">
+                    <div class="image-circle col-lg-4 col-sm-6" ng-repeat="guy in guys">
+                        <a href="#bisoye" class="portfolio-box">
+                            <img src="{{guy.image}}" class="image-circle img-responsive" alt="">
+                            <div class="image-circle portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        {{ guy.name }}
+                                    </div>
+                                    <div class="project-name">
+                                        view profile
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        </section>
+        <aside class="bg-dark">
+            <div class="container text-center">
+                <div class="call-to-action">
+                    <h2>Personal Diary Page</h2>
+                    <a href="#" class="btn btn-default btn-xl wow tada">Guys Login</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Angular -->
-    <script src="../../bower_components/angular/angular.js"></script>
-
-    <!-- angular modules -->
-    <script src="../js/app.js"></script>
-    <script src="../js/controllers/mainController.js"></script>
-    <script src="../js/router/routes.js"></script>
-    
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../../bower_components/jquery/dist/jquery.js"></script>
-    <script src="../../bower_components/bootstrap/js/carousel.js"></script>
-    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- Custom Theme JavaScript -->
-    <!--<script>
+        </aside>
+        <section id="personal-diaries">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2 class="section-heading">Contact Our Group</h2>
+                        <hr class="primary">
+                        <p>Will you like to talk to all of us, invite us to an event, yarb us or just want to know more, you can reach the group through any of the contacts below</p>
+                    </div>
+                    <div class="col-lg-4 col-lg-offset-2 text-center">
+                        <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                        <p>123-456-6789</p>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <p><a href="mailto:your-email@your-domain.com">reachout@bestoffriends.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Angular -->
+        <script src="../../bower_components/angular/angular.js"></script>
+        <!-- angular modules -->
+        <script src="../js/app.js"></script>
+        <script src="../js/controllers/mainController.js"></script>
+        <script src="../js/router/routes.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="../../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../../bower_components/bootstrap/js/carousel.js"></script>
+        <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- Custom Theme JavaScript -->
+        <!--<script>
     $document.ready(function(){
         $('.carousel').carousel();
     }); 

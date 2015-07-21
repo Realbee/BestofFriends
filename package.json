@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "BestofFriends app for our life biographies",
   "scripts": {
-    "start": "node ./app/server.js",
+    "start": "node ./app/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -35,6 +35,9 @@
     "method-override": "latest"
   },
   "dependencies": {
-    "morgan": "^1.6.1"
+    "express-session": "^1.11.3",
+    "morgan": "^1.6.1",
+    "passport": "^0.2.2",
+    "passport-local": "^1.0.0"
   }
 }
