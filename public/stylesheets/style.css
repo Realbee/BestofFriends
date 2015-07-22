@@ -23,7 +23,8 @@ hr {
 
 
 }
-hr.light {
+hr.info {
+    color: #5bc0df;
     border-color: #fff;
 }
 a {
@@ -50,14 +51,14 @@ p {
     line-height: 1.5;
 }
 .bg-primary {
-    background-color: #f05f40;
+    background-color: #5bc0de;
 }
-.bg-dark {
-    color: #fff;
-    background-color: #222;
+.bg-light {
+    color: #5bc0df;
+    background-color: #fff;
 }
 .text-faded {
-    color: rgba(255, 255, 255, .7);
+    color: rgba(51, 153, 255 .7);
 }
 section {
     padding: 100px 0;
@@ -66,7 +67,7 @@ aside {
     padding: 50px 0;
 }
 .no-padding {
-    background-color: #1c86ee;
+    background-color: #5bc0de;
     padding-top: 0;
     padding-top: 0;
     padding-bottom: 0;
@@ -75,7 +76,7 @@ aside {
     height: 430px;
 }
 .bg-primary {
-    background-color: #1c86ee;
+    background-color: #5bc0de;
 }
 .bg-success {
     background-color: transparent;
@@ -88,7 +89,7 @@ aside {
 .carousel > .carousel-inner > .item > img {
     width: 100%;
     position: center;
-    height: 700px !important;
+    height: 100% !important;
     overflow: hidden;
 }
 .carousel-indicators {
@@ -189,7 +190,7 @@ aside {
     margin-top: 12%;
     margin-left: 20%;
     max-height: 300px;
-    color: #f40;
+    color: #5bc0de;
     text-align: center;
     background-color: transparent;
     background-position: center;
@@ -200,13 +201,19 @@ aside {
 }
 .text-intro {
     font-size: 16px;
-    font-color: #f40 !important;
+    font-color: #5bc0df !important;
 }
 .lead {
     font-size: 44px;
     font-weight: 700;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     text-transform: uppercase;
+}
+
+.detailBox {
+     margin-top: 10%;
+    margin-left: 15%;
+    overflow: scroll; 
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     .no-padding {
@@ -247,6 +254,12 @@ aside {
         margin-bottom: 30%;
         vertical-align: center;
     }
+
+    .detailBox {
+     margin-top: 0;
+    margin-left: 0;
+    overflow: scroll; 
+}
 }
 .section-heading {
     margin-top: 0;
@@ -275,6 +288,11 @@ aside {
     border-radius: 50%;
     behavior: url(PIE.htc);
 }
+.image-square {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
 .portfolio-box .portfolio-box-caption {
     display: block;
     position: absolute;
@@ -284,7 +302,7 @@ aside {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(240, 95, 64, .9);
+    background: rgba(51, 153, 200, .9);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -321,11 +339,12 @@ aside {
         font-size: 22px;
     }
 }
+
 .call-to-action h2 {
     margin: 0 auto 20px;
 }
 .text-primary {
-    color: #f05f40;
+    color: #5bc0df;
 }
 .no-gutter > [class*=col-] {
     padding-right: 0;

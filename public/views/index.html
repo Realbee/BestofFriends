@@ -75,16 +75,32 @@
         <div class="pageheader">
             <h1 class="lead">Welcome To The World of These Crazy and Inspiring Pals</h1>
             <p class="text-intro">We are a set of smart, intelligent and weird set of guys with common dreams to change the world, break new grounds, and touch lives positively</p>
-            <a href="#our-story" class="btn btn-primary btn-xl page-scroll">Find Out More About Us</a>
+            <a href="#our-story" class="btn btn-info btn-xl page-scroll">Find Out More About Us</a>
         </div>
         <section class="bg-primary" id="our-story">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 text-center">
                         <h2 class="section-heading">Faith Sometimes, Brings Great Minds Together!</h2>
-                        <hr class="light">
+                        <hr class="info">
                         <p class="text-faded">It all started in University of Ilorin, in 2009 when we all gain admission to to study different courses,. We all met at different stages during our early days and by the end of the first year, we have all become familiar with each other, the friendship became stronger, we moved from casual friendship to sharing ideas, offering support, failing and suceeding together, we found a bond stronger than friendship and together we began aspiring for greatness.</p>
-                        <a href="#" class="btn btn-default btn-xl">Read More</a>
+                        <a data-toggle="modal" data-target="#ourStory" class="btn btn-default btn-xl">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade detailBox" id="ourStory" tabindex="-1" role="display" aria-labelledby="form">
+                <div class="modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title text-info"> OUR STORY </h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-info">details later.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-info btn-l" data-dismiss="modal">Close</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,7 +110,7 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2 class="section-heading">Gallery</h2>
-                        <hr class="primary">
+                        <hr class="info">
                     </div>
                 </div>
             </div>
@@ -135,52 +151,76 @@
             <div class="container-fluid">
                 <div class="row no-gutter">
                     <div class="image-circle col-lg-4 col-sm-6" ng-repeat="guy in guys">
-                        <a data-toggle="modal" data-target="#profileModal" class="portfolio-box">
+                        <a data-toggle="modal" href="#profileModal{{guy.memberId}}" class="portfolio-box">
                             <img src="{{guy.image}}" class="image-circle img-responsive" alt="">
                             <div class="image-circle portfolio-box-caption">
                                 <div class="portfolio-box-caption-content">
                                     <div class="project-category text-faded">
                                         {{ guy.name }}
-                                        <p> A.K.A {{guy.memberId}}</p>
-                                    </div>
-                                    <div class="project-name">
-                                        view profile
+                                        <p> a.k.a {{guy.memberId}}</p>
                                     </div>
                                 </div>
                             </div>
                         </a>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="profileLabel">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                    <h4 class="modal-title" id="profileLabel">{{ guy.name }}</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <img src="{{guy.image}}" class="image-circle img-responsive" alt="">
-                                    <div ng-controller="dataController" ng-bind="$scope.profile"></div>
+                        <div class="modal fade detailBox" id="profileModal{{guy.memberId}}" tabindex="-1" role="dialog" aria-labelledby="profileLabel">
+                            <div class="modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title text-info" id="profileLabel">{{guy.name}} a.k.a {{guy.memberId}}</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="{{guy.image}}" class="image-square" alt="">
+                                        <div class=" text-info" ng-controller="mainController" ng-bind="$scope.profile">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default btn-l" data-dismiss="modal">Close</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
         </section>
         <aside class="bg-light">
             <div class="container text-center">
                 <div class="call-to-action">
                     <h2>Personal Diary Page</h2>
-                    <a href="#" class="btn btn-info btn-xl wow tada">Guys Login</a>
+                    <a data-toggle="modal" data-target="#logInForm" class="btn btn-info btn-xl wow tada">Guys Login</a>
+                </div>
+            </div>
+            <div class="modal fade" id="logInForm" tabindex="-1" role="dialog" aria-labelledby="form">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title"> Guys Login </h4>
+                        </div>
+                        <form>
+                            <div class="modal-body form-group">
+                                <label for="nickname" class="control-label">Nickname</label>
+                                <input id="nickname" type="text" class="form-control" placeholder="Enter your nickname">
+                                <label for="password" class="control-label">Password</label>
+                                <input id="password" type="password" class="form-control" placeholder="Enter your password">
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-info btn-l">Log me in</button>
+                                    <button type="button" class="btn btn-default btn-l" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </aside>
-        <section id="personal-diaries">
+        <section>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 text-center">
                         <h2 class="section-heading">Contact Our Group</h2>
-                        <hr class="primary">
+                        <hr class="info">
                         <p>Will you like to talk to all of us, invite us to an event, yarb us or just want to know more, you can reach the group through any of the contacts below</p>
                     </div>
                     <div class="col-lg-4 col-lg-offset-2 text-center">
@@ -205,7 +245,6 @@
         <!-- Bootstrap Core JavaScript -->
         <script src="../../bower_components/jquery/dist/jquery.js"></script>
         <script src="../../bower_components/bootstrap/js/carousel.js"></script>
-        <script src="../../bower_components/bootstrap/js/modal.js"></script>
         <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <!-- Custom Theme JavaScript -->
         <!--<script>

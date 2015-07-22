@@ -1,25 +1,25 @@
-var mainController = angular.module('mainController', ['mainRouter', 'getData']);
+var app = angular.module('friendsApp', ['mainRouter', 'getData']);
 
-mainController.controller('mainController', function($scope) {
+app.controller('mainController', function($scope) {
 
     $scope.guys = [{
-    		memberId: "B",
+        memberId: "B",
         name: "Atolagbe Bisoye Lateef",
         image: "../images/bisoye.jpg"
     }, {
-    		memberId: "Nobest",
+        memberId: "Nobest",
         name: "Hassan Semiu Ayomon",
         image: "../images/semiu.jpg"
     }, {
-    	memberId: "Simplylatino",
+        memberId: "Simplylatino",
         name: "Oyebanji Lateef Abolarinwa",
         image: "../images/photo4.jpg"
     }, {
-    		memberId: "Molanny",
+        memberId: "Molanny",
         name: "Giwa Omotolani Saheed",
         image: "../images/saheed.jpg"
     }, {
-    		memberId: "Franco",
+        memberId: "Franco",
         name: "Falaju Idowu Francis",
         image: "../images/franco.jpg"
     }, {
@@ -27,24 +27,24 @@ mainController.controller('mainController', function($scope) {
         name: "Awotedu Opeyemi Eedris",
         image: "../images/drizzle.jpg"
     }, {
-    		memberId: "Okin",
+        memberId: "Okin",
         name: "Orowole Kolawole Inumidun",
-        image: "../images/photo1.jpg"
+        image: "../images/kola.jpg"
     }, {
-    		memberId: "Ceedurf",
+        memberId: "Ceedurf",
         name: "Rhaman Saheed Adewale",
         image: "../images/wale.jpg"
     }, {
-    		memberId: "Ola",
+        memberId: "Ola",
         name: "Tijani Olayiwola",
         image: "../images/ola.jpg"
     }, {
-    		memberId: "Simon",
+        memberId: "Simon",
         name: "Lawal Sunday Simon",
         image: "../images/photo3.jpg"
     }];
 
-    
+
     $scope.showProfile = function(status) {
         var viewProfile = status;
 
@@ -52,7 +52,7 @@ mainController.controller('mainController', function($scope) {
 
 });
 
-mainController.controller = ('dataController', function($scope, Profiles, memberName) {
+app.controller = ('dataController', function($scope, Profiles, memberName) {
 
     Profiles.get({
         memberId: memberName
