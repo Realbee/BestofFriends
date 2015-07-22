@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="mainManager">
+<html lang="en" ng-app="friendsApp">
 
 <head>
     <meta charset="utf-8">
@@ -131,17 +131,17 @@
                 </div>
             </div>
         </section>
-        <ng-view></ng-view>
         <section class="no-padding" id="our-profiles">
             <div class="container-fluid">
                 <div class="row no-gutter">
                     <div class="image-circle col-lg-4 col-sm-6" ng-repeat="guy in guys">
-                        <a href="#bisoye" class="portfolio-box">
+                        <a data-toggle="modal" data-target="#profileModal" class="portfolio-box">
                             <img src="{{guy.image}}" class="image-circle img-responsive" alt="">
                             <div class="image-circle portfolio-box-caption">
                                 <div class="portfolio-box-caption-content">
                                     <div class="project-category text-faded">
                                         {{ guy.name }}
+                                        <p> A.K.A {{guy.memberId}}</p>
                                     </div>
                                     <div class="project-name">
                                         view profile
@@ -150,12 +150,28 @@
                             </div>
                         </a>
                     </div>
+                    </div>
+                    </div>
+                    <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="profileLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="profileLabel">{{ guy.name }}</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="{{guy.image}}" class="image-circle img-responsive" alt="">
+                                    <div ng-controller="dataController" ng-bind="$scope.profile"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
         </section>
-        <aside class="bg-dark">
+        <aside class="bg-light">
             <div class="container text-center">
                 <div class="call-to-action">
                     <h2>Personal Diary Page</h2>
-                    <a href="#" class="btn btn-default btn-xl wow tada">Guys Login</a>
+                    <a href="#" class="btn btn-info btn-xl wow tada">Guys Login</a>
                 </div>
             </div>
         </aside>
@@ -178,15 +194,18 @@
                 </div>
             </div>
         </section>
-        <!-- Angular -->
+        <!-- Angular modules-->
         <script src="../../bower_components/angular/angular.js"></script>
-        <!-- angular modules -->
+        <script src="../../bower_components/angular-resource/angular-resource.js"></script>
+        <script src="../../bower_components/angular-route/angular-route.js"></script>
         <script src="../js/app.js"></script>
         <script src="../js/controllers/mainController.js"></script>
         <script src="../js/router/routes.js"></script>
+        <script src="../js/router/getdata.js"></script>
         <!-- Bootstrap Core JavaScript -->
         <script src="../../bower_components/jquery/dist/jquery.js"></script>
         <script src="../../bower_components/bootstrap/js/carousel.js"></script>
+        <script src="../../bower_components/bootstrap/js/modal.js"></script>
         <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <!-- Custom Theme JavaScript -->
         <!--<script>

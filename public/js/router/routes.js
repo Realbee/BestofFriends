@@ -1,5 +1,13 @@
-var mainRouter = angular.module('mainRouter', [])
+var mainRouter = angular.module('mainRouter', ['ngRoute'])
 
-.factory('mainRouter', '$http', function($http){
-
-});
+mainRouter.config(['$routeProvider',
+  function($routeProvider) {
+    $routeProvider.
+       when('/our-profiles/:memberId', {
+        templateUrl: '../../views/member-profiles.html',
+        controller: 'dataController'
+      }).
+      otherwise({
+        redirectTo: '/our-profiles'
+      });
+  }]);

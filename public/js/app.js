@@ -1,1 +1,1 @@
-var app = angular.module('mainManager', ['mainController']);
+var app = angular.module('friendsApp', ['mainController']);
