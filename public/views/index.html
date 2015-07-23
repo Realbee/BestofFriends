@@ -10,7 +10,11 @@
     <title>Best of Friends</title>
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css" type="text/css">
-    <!-- Custom Fonts -->
+    <!-- Bootstrap Material Design -->
+    <link rel="stylesheet" href="../../bower_components/bootstrap-material-design/dist/css/material-fullpalette.css" type="text/css">
+        <link rel="stylesheet" href="../../bower_components/bootstrap-material-design/dist/css/material.css" type="text/css">
+        <link rel="stylesheet" href="../../bower_components/bootstrap-material-design/dist/css/ripples.css" type="text/css">
+
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="../stylesheets/style.css" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -22,7 +26,7 @@
 </head>
 
 <body id="page-top" ng-controller="mainController">
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <nav id="mainNav" class="navbar navbar-default rippple navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -74,8 +78,8 @@
         <a class="right carousel-control" href="#carousel-current" role="button" data-slide="next"><span class="glyphicon glyphicom-chevron-right"></span></a>
         <div class="pageheader">
             <h1 class="lead">Welcome To The World of These Crazy and Inspiring Pals</h1>
-            <p class="text-intro">We are a set of smart, intelligent and weird set of guys with common dreams to change the world, break new grounds, and touch lives positively</p>
-            <a href="#our-story" class="btn btn-info btn-xl page-scroll">Find Out More About Us</a>
+            <p class="text-info">We are a set of smart, intelligent and weird set of guys with common dreams to change the world, break new grounds, and touch lives positively</p>
+            <a href="#our-story" class="btn btn-info btn-raised btn-xl page-scroll">Find Out More About Us</a>
         </div>
         <section class="bg-primary" id="our-story">
             <div class="container">
@@ -83,8 +87,8 @@
                     <div class="col-lg-8 col-lg-offset-2 text-center">
                         <h2 class="section-heading">Faith Sometimes, Brings Great Minds Together!</h2>
                         <hr class="info">
-                        <p class="text-faded">It all started in University of Ilorin, in 2009 when we all gain admission to to study different courses,. We all met at different stages during our early days and by the end of the first year, we have all become familiar with each other, the friendship became stronger, we moved from casual friendship to sharing ideas, offering support, failing and suceeding together, we found a bond stronger than friendship and together we began aspiring for greatness.</p>
-                        <a data-toggle="modal" data-target="#ourStory" class="btn btn-default btn-xl">Read More</a>
+                        <p class="body-text text-default">It all started in University of Ilorin, in 2009 when we all gain admission to study different courses,. We all met at different stages during our early days and by the end of the first year, we have all become familiar with each other, the friendship became stronger, we moved from casual friendship to sharing ideas, offering support, failing and suceeding together, we found a bond stronger than friendship and together we began aspiring for greatness.</p>
+                        <a data-toggle="modal" data-target="#ourStory" class="btn btn-raised btn-info btn-xl">Read More</a>
                     </div>
                 </div>
             </div>
@@ -96,10 +100,10 @@
                             <h4 class="modal-title text-info"> OUR STORY </h4>
                         </div>
                         <div class="modal-body">
-                            <p class="text-info">details later.</p>
+                            <p class="body-text text-muted">details later.</p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-info btn-l" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-raised btn-info btn-l" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
@@ -120,28 +124,28 @@
                         <div class="service-box">
                             <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
                             <h3>All Photos</h3>
-                            <p class="text-muted">View every picture in our regularly updated gallery.</p>
+                            <p class="body-text text-muted">View every picture in our regularly updated gallery.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="service-box">
                             <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
                             <h3>Historical/Cronological</h3>
-                            <p class="text-muted">Photos of our we started, how our friendship grew and some current photos</p>
+                            <p class="body-text text-muted">Photos of our we started, how our friendship grew and some current photos</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="service-box">
                             <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
                             <h3>Important Events</h3>
-                            <p class="text-muted">Photos of important achievements and milestones of some of us</p>
+                            <p class="body-text text-muted">Photos of important achievements and milestones of some of us</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="service-box">
                             <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
                             <h3>Our favourites</h3>
-                            <p class="text-muted">Some photos on crazy stuffs we have done and other special favourites</p>
+                            <p class="body-text text-muted">Some photos on crazy stuffs we have done and other special favourites</p>
                         </div>
                     </div>
                 </div>
@@ -157,7 +161,7 @@
                                 <div class="portfolio-box-caption-content">
                                     <div class="project-category text-faded">
                                         {{ guy.name }}
-                                        <p> a.k.a {{guy.memberId}}</p>
+                                        <p "text text-default"> a.k.a {{guy.memberId}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -167,16 +171,16 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title text-info" id="profileLabel">{{guy.name}} a.k.a {{guy.memberId}}</h4>
+                                        <h4 class="modal-title body-text text-default" id="profileLabel">{{guy.name}} a.k.a {{guy.memberId}}</h4>
                                     </div>
                                     <div class="modal-body">
                                         <img src="{{guy.image}}" class="image-square" alt="">
-                                        <div class=" text-info" ng-controller="mainController" ng-bind="$scope.profile">
+                                        <div class=" body-text text-info" ng-controller="mainController" ng-bind="$scope.profile">
                                             
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-default btn-l" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-raised btn-default btn-l" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -185,11 +189,11 @@
                 </div>
             </div>
         </section>
-        <aside class="bg-light">
+        <aside id="personal-diaries" class="bg-light">
             <div class="container text-center">
                 <div class="call-to-action">
                     <h2>Personal Diary Page</h2>
-                    <a data-toggle="modal" data-target="#logInForm" class="btn btn-info btn-xl wow tada">Guys Login</a>
+                    <a data-toggle="modal" data-target="#logInForm" class="btn btn-raised btn-info btn-xl wow tada">Guys Login</a>
                 </div>
             </div>
             <div class="modal fade" id="logInForm" tabindex="-1" role="dialog" aria-labelledby="form">
@@ -199,15 +203,13 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             <h4 class="modal-title"> Guys Login </h4>
                         </div>
-                        <form>
+                        <form class="form-horizontal">
                             <div class="modal-body form-group">
-                                <label for="nickname" class="control-label">Nickname</label>
-                                <input id="nickname" type="text" class="form-control" placeholder="Enter your nickname">
-                                <label for="password" class="control-label">Password</label>
-                                <input id="password" type="password" class="form-control" placeholder="Enter your password">
+                                <input id="focusedInput" type="text" class="form-control floating-label" placeholder="Nickname">
+                                <input id="focusedInput" type="password" class="form-control floating-label" placeholder="Password">
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-info btn-l">Log me in</button>
-                                    <button type="button" class="btn btn-default btn-l" data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-info btn-raised btn-l">Log me in</button>
+                                    <button type="button" class="btn btn-default btn-raised btn-l" data-dismiss="modal">Cancel</button>
                                 </div>
                             </div>
                         </form>
@@ -221,7 +223,7 @@
                     <div class="col-lg-8 col-lg-offset-2 text-center">
                         <h2 class="section-heading">Contact Our Group</h2>
                         <hr class="info">
-                        <p>Will you like to talk to all of us, invite us to an event, yarb us or just want to know more, you can reach the group through any of the contacts below</p>
+                        <p class="body-text text-default">Will you like to talk to all of us, invite us to an event, yarb us or just want to know more, you can reach the group through any of the contacts below</p>
                     </div>
                     <div class="col-lg-4 col-lg-offset-2 text-center">
                         <i class="fa fa-phone fa-3x wow bounceIn"></i>
@@ -246,6 +248,8 @@
         <script src="../../bower_components/jquery/dist/jquery.js"></script>
         <script src="../../bower_components/bootstrap/js/carousel.js"></script>
         <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../../bower_components/bootstrap-material-design/dist/js/material.js"></script>
+        <script src="../../bower_components/bootstrap-material-design/dist/js/ripples.js"></script>
         <!-- Custom Theme JavaScript -->
         <!--<script>
     $document.ready(function(){

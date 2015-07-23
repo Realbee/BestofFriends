@@ -89,7 +89,7 @@ aside {
 .carousel > .carousel-inner > .item > img {
     width: 100%;
     position: center;
-    height: 100% !important;
+    height: 750px !important;
     overflow: hidden;
 }
 .carousel-indicators {
@@ -98,7 +98,7 @@ aside {
 .navbar-default {
     border-color: rgba(34, 34, 34, .05);
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-    background-color: #fff;
+    background-color: #5bc0de !important;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -201,23 +201,23 @@ aside {
 }
 .text-intro {
     font-size: 16px;
-    font-color: #5bc0df !important;
 }
 .lead {
     font-size: 44px;
     font-weight: 700;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     text-transform: uppercase;
+    color: #5bc0de;
 }
 
 .detailBox {
      margin-top: 10%;
-    margin-left: 15%;
+    margin-left: 13%;
     overflow: scroll; 
 }
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 550px) {
     .no-padding {
-        background-color: #1c86ee;
+        background-color: #5bc0de;
         padding-top: 5%;
         padding-bottom: 5%;
         padding-left: 20%;
@@ -302,7 +302,7 @@ aside {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(51, 153, 200, .9);
+    background-color: #5bc0de;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
