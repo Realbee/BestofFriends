@@ -2,256 +2,260 @@
 <html lang="en" ng-app="friendsApp">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Best of Friends</title>
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css" type="text/css">
-    <!-- Bootstrap Material Design -->
-    <link rel="stylesheet" href="../../bower_components/bootstrap-material-design/dist/css/material-fullpalette.css" type="text/css">
-        <link rel="stylesheet" href="../../bower_components/bootstrap-material-design/dist/css/material.css" type="text/css">
-        <link rel="stylesheet" href="../../bower_components/bootstrap-material-design/dist/css/ripples.css" type="text/css">
-
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="../stylesheets/style.css" type="text/css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Best of Friends</title>
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css" type="text/css">
+  <!-- Bootstrap Material Design -->
+  <link rel="stylesheet" href="../../bower_components/bootstrap-material-design/dist/css/material-fullpalette.css" type="text/css">
+  <link rel="stylesheet" href="../../bower_components/bootstrap-material-design/dist/css/material.css" type="text/css">
+  <link rel="stylesheet" href="../../bower_components/bootstrap-material-design/dist/css/ripples.css" type="text/css">
+  <!-- Plugin CSS -->
+  <link rel="stylesheet" href="../stylesheets/style.css" type="text/css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
 
 <body id="page-top" ng-controller="mainController">
-    <nav id="mainNav" class="navbar navbar-default rippple navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Best of Friends</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#our-story">Our Story</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#our-photos">Gallery</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#our-profiles">Our Profiles</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#personal-diaries">Personal Diaries</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+  <nav id="mainNav" class="navbar navbar-default rippple navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">Best of Friends</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="page-scroll" href="#our-story">Our Story</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#our-photos">Gallery</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#our-profiles">Our Profiles</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#personal-diaries">Personal Diaries</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <div id="carousel-current" class="carousel slide" data-ride="carousel" data-interval="3000">
+    <ol class="carousel-indicators">
+      <li data-target="carousel-current" data-slide-to="0" class="active"></li>
+      <li data-target="carousel-current" data-slide-to="1"></li>
+      <li data-target="carousel-current" data-slide-to="2"></li>
+      <li data-target="carousel-current" data-slide-to="3"></li>
+      <li data-target="carousel-current" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active"><img src="../images/photo1.jpg" alt=" "></div>
+      <div class="item"><img src="../images/photo2.jpg" alt=" "></div>
+      <div class="item"><img src="../images/photo3.jpg" alt=" "></div>
+      <div class="item"><img src="../images/photo4.jpg" alt=" "></div>
+      <div class="item"><img src="../images/photo5.jpg" alt=" "></div>
+    </div>
+    <a class="left carousel-control" href="#carousel-current" role="button" data-slide="prev"><span class="glyphicon glyphicom-chevron-left"></span></a>
+    <a class="right carousel-control" href="#carousel-current" role="button" data-slide="next"><span class="glyphicon glyphicom-chevron-right"></span></a>
+    <div class="pageheader">
+      <h1 class="lead">Welcome To The World of These Crazy and Inspiring Pals</h1>
+      <p class="text-info">We are a set of smart, intelligent and weird set of guys with common dreams to change the world, break new grounds, and touch lives positively</p>
+      <a href="#our-story" class="btn btn-info btn-raised btn-xl page-scroll">Find Out More About Us</a>
+    </div>
+    <section class="bg-primary" id="our-story">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+            <h2 class="section-heading">Faith Sometimes, Brings Great Minds Together!</h2>
+            <hr class="info">
+            <p class="body-text text-default">It all started in University of Ilorin, in 2009 when we all gain admission to study different courses,. We all met at different stages during our early days and by the end of the first year, we have all become familiar with each other, the friendship became stronger, we moved from casual friendship to sharing ideas, offering support, failing and suceeding together, we found a bond stronger than friendship and together we began aspiring for greatness.</p>
+            <a data-toggle="modal" data-target="#ourStory" class="btn btn-raised btn-info btn-xl">Read More</a>
+          </div>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-    <div id="carousel-current" class="carousel slide" data-ride="carousel" data-interval="3000">
-        <ol class="carousel-indicators">
-            <li data-target="carousel-current" data-slide-to="0" class="active"></li>
-            <li data-target="carousel-current" data-slide-to="1"></li>
-            <li data-target="carousel-current" data-slide-to="2"></li>
-            <li data-target="carousel-current" data-slide-to="3"></li>
-            <li data-target="carousel-current" data-slide-to="4"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="item active"><img src="../images/photo1.jpg" alt=" "></div>
-            <div class="item"><img src="../images/photo2.jpg" alt=" "></div>
-            <div class="item"><img src="../images/photo3.jpg" alt=" "></div>
-            <div class="item"><img src="../images/photo4.jpg" alt=" "></div>
-            <div class="item"><img src="../images/photo5.jpg" alt=" "></div>
+      </div>
+      <div class="modal fade detailBox" id="ourStory" tabindex="-1" role="display" aria-labelledby="form">
+        <div class="modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title text-info"> OUR STORY </h4>
+            </div>
+            <div class="modal-body">
+              <p class="body-text text-muted">details later.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-raised btn-info btn-l" data-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
-        <a class="left carousel-control" href="#carousel-current" role="button" data-slide="prev"><span class="glyphicon glyphicom-chevron-left"></span></a>
-        <a class="right carousel-control" href="#carousel-current" role="button" data-slide="next"><span class="glyphicon glyphicom-chevron-right"></span></a>
-        <div class="pageheader">
-            <h1 class="lead">Welcome To The World of These Crazy and Inspiring Pals</h1>
-            <p class="text-info">We are a set of smart, intelligent and weird set of guys with common dreams to change the world, break new grounds, and touch lives positively</p>
-            <a href="#our-story" class="btn btn-info btn-raised btn-xl page-scroll">Find Out More About Us</a>
+      </div>
+    </section>
+    <section class="bg-success" id="our-photos">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Gallery</h2>
+            <hr class="info">
+          </div>
         </div>
-        <section class="bg-primary" id="our-story">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <h2 class="section-heading">Faith Sometimes, Brings Great Minds Together!</h2>
-                        <hr class="info">
-                        <p class="body-text text-default">It all started in University of Ilorin, in 2009 when we all gain admission to study different courses,. We all met at different stages during our early days and by the end of the first year, we have all become familiar with each other, the friendship became stronger, we moved from casual friendship to sharing ideas, offering support, failing and suceeding together, we found a bond stronger than friendship and together we began aspiring for greatness.</p>
-                        <a data-toggle="modal" data-target="#ourStory" class="btn btn-raised btn-info btn-xl">Read More</a>
-                    </div>
-                </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
+              <h3>All Photos</h3>
+              <p class="body-text text-muted">View every picture in our regularly updated gallery.</p>
             </div>
-            <div class="modal fade detailBox" id="ourStory" tabindex="-1" role="display" aria-labelledby="form">
-                <div class="modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title text-info"> OUR STORY </h4>
-                        </div>
-                        <div class="modal-body">
-                            <p class="body-text text-muted">details later.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-raised btn-info btn-l" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
+              <h3>Historical/Cronological</h3>
+              <p class="body-text text-muted">Photos of our we started, how our friendship grew and some current photos</p>
             </div>
-        </section>
-        <section class="bg-success" id="our-photos">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Gallery</h2>
-                        <hr class="info">
-                    </div>
-                </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+              <h3>Important Events</h3>
+              <p class="body-text text-muted">Photos of important achievements and milestones of some of us</p>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="service-box">
-                            <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                            <h3>All Photos</h3>
-                            <p class="body-text text-muted">View every picture in our regularly updated gallery.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="service-box">
-                            <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                            <h3>Historical/Cronological</h3>
-                            <p class="body-text text-muted">Photos of our we started, how our friendship grew and some current photos</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="service-box">
-                            <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                            <h3>Important Events</h3>
-                            <p class="body-text text-muted">Photos of important achievements and milestones of some of us</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="service-box">
-                            <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                            <h3>Our favourites</h3>
-                            <p class="body-text text-muted">Some photos on crazy stuffs we have done and other special favourites</p>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+              <h3>Our favourites</h3>
+              <p class="body-text text-muted">Some photos on crazy stuffs we have done and other special favourites</p>
             </div>
-        </section>
-        <section class="no-padding" id="our-profiles">
-            <div class="container-fluid">
-                <div class="row no-gutter">
-                    <div class="image-circle col-lg-4 col-sm-6" ng-repeat="guy in guys">
-                        <a data-toggle="modal" href="#profileModal{{guy.memberId}}" class="portfolio-box">
-                            <img src="{{guy.image}}" class="image-circle img-responsive" alt="">
-                            <div class="image-circle portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        {{ guy.name }}
-                                        <p "text text-default"> a.k.a {{guy.memberId}}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="modal fade detailBox" id="profileModal{{guy.memberId}}" tabindex="-1" role="dialog" aria-labelledby="profileLabel">
-                            <div class="modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title body-text text-default" id="profileLabel">{{guy.name}} a.k.a {{guy.memberId}}</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="{{guy.image}}" class="image-square" alt="">
-                                        <div class=" body-text text-info" ng-controller="mainController" ng-bind="$scope.profile">
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-raised btn-default btn-l" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="no-padding" id="our-profiles">
+      <div class="container-fluid">
+        <div class="row no-gutter">
+          <div class="image-circle col-lg-4 col-sm-6" ng-repeat="guy in guys">
+            <a data-toggle="modal" href="#profileModal{{guy.memberId}}" class="portfolio-box">
+              <img src="{{guy.image}}" class="image-circle img-responsive" alt="">
+              <div class="image-circle portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    {{ guy.name }}
+                    <p "text text-default"> a.k.a {{guy.memberId}}</p>
+                  </div>
                 </div>
-            </div>
-        </section>
-        <aside id="personal-diaries" class="bg-light">
-            <div class="container text-center">
-                <div class="call-to-action">
-                    <h2>Personal Diary Page</h2>
-                    <a data-toggle="modal" data-target="#logInForm" class="btn btn-raised btn-info btn-xl wow tada">Guys Login</a>
+              </div>
+            </a>
+            <div class="modal fade detailBox" id="profileModal{{guy.memberId}}" tabindex="-1" role="dialog" aria-labelledby="profileLabel">
+              <div class="modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title body-text text-default" id="profileLabel">{{guy.name}} a.k.a {{guy.memberId}}</h4>
+                  </div>
+                  <div class="modal-body">
+                    <img src="{{guy.image}}" class="image-square" alt="">
+                    <div class=" body-text text-info" ng-controller="mainController" ng-bind="$scope.profile">
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-raised btn-default btn-l" data-dismiss="modal">Close</button>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="modal fade" id="logInForm" tabindex="-1" role="dialog" aria-labelledby="form">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content ">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title"> Guys Login </h4>
-                        </div>
-                        <form class="form-horizontal">
-                            <div class="modal-body form-group">
-                                <input id="focusedInput" type="text" class="form-control floating-label" placeholder="Nickname">
-                                <input id="focusedInput" type="password" class="form-control floating-label" placeholder="Password">
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-info btn-raised btn-l">Log me in</button>
-                                    <button type="button" class="btn btn-default btn-raised btn-l" data-dismiss="modal">Cancel</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside id="personal-diaries" class="bg-light">
+      <div class="container text-center">
+        <div class="call-to-action">
+          <h2>Personal Diary Page</h2>
+         
+          <!-- view for diarie pages 
+          <div ng-show="space" class="jumbotron">
+            <div ng-view></div>
+          </div>-->
+         
+          <a data-toggle="modal" data-target="#logInForm" class="btn btn-raised btn-info btn-xl wow tada">Guys Login</a>
+        </div>
+      </div>
+      <div class="modal fade" id="logInForm" tabindex="-1" role="dialog" aria-labelledby="form">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content ">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title"> Guys Login </h4>
+            </div>
+            <form class="form-horizontal">
+              <div class="modal-body form-group">
+                <input id="focusedInput" type="text" class="form-control floating-label" placeholder="Nickname">
+                <input id="focusedInput" type="password" class="form-control floating-label" placeholder="Password">
+                <div class="modal-footer">
+                  <a href="#/diaries" class="btn btn-info btn-raised btn-l">Log me in</a>
+                  <button type="button" class="btn btn-default btn-raised btn-l" data-dismiss="modal">Cancel</button>
                 </div>
-            </div>
-        </aside>
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <h2 class="section-heading">Contact Our Group</h2>
-                        <hr class="info">
-                        <p class="body-text text-default">Will you like to talk to all of us, invite us to an event, yarb us or just want to know more, you can reach the group through any of the contacts below</p>
-                    </div>
-                    <div class="col-lg-4 col-lg-offset-2 text-center">
-                        <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                        <p>123-456-6789</p>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                        <p><a href="mailto:your-email@your-domain.com">reachout@bestoffriends.com</a></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Angular modules-->
-        <script src="../../bower_components/angular/angular.js"></script>
-        <script src="../../bower_components/angular-resource/angular-resource.js"></script>
-        <script src="../../bower_components/angular-route/angular-route.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/controllers/mainController.js"></script>
-        <script src="../js/router/routes.js"></script>
-        <script src="../js/router/getdata.js"></script>
-        <!-- Bootstrap Core JavaScript -->
-        <script src="../../bower_components/jquery/dist/jquery.js"></script>
-        <script src="../../bower_components/bootstrap/js/carousel.js"></script>
-        <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="../../bower_components/bootstrap-material-design/dist/js/material.js"></script>
-        <script src="../../bower_components/bootstrap-material-design/dist/js/ripples.js"></script>
-        <!-- Custom Theme JavaScript -->
-        <!--<script>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+            <h2 class="section-heading">Contact Our Group</h2>
+            <hr class="info">
+            <p class="body-text text-default">Will you like to talk to all of us, invite us to an event, yarb us or just want to know more, you can reach the group through any of the contacts below</p>
+          </div>
+          <div class="col-lg-4 col-lg-offset-2 text-center">
+            <i class="fa fa-phone fa-3x wow bounceIn"></i>
+            <p>123-456-6789</p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+            <p><a href="mailto:bestoffriends@gmail.com">reachout@bestoffriends.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Angular modules-->
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="../../bower_components/angular-resource/angular-resource.js"></script>
+    <script src="../../bower_components/angular-route/angular-route.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/controllers/mainController.js"></script>
+    <script src="../js/router/routes.js"></script>
+    <script src="../js/router/getdata.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../../bower_components/bootstrap/js/carousel.js"></script>
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../bower_components/bootstrap-material-design/dist/js/material.js"></script>
+    <script src="../../bower_components/bootstrap-material-design/dist/js/ripples.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <!--<script>
     $document.ready(function(){
         $('.carousel').carousel();
     }); 
