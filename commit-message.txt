@@ -1,0 +1,4 @@
+Feat(diaries): create diary page
+
+created a new view for personal diaries
+
